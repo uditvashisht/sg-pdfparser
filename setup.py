@@ -14,14 +14,14 @@ setup(
     description="A Command Line tool for parsing PDFs.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/realpython/reader",
+    url="https://github.com/uditvashisht/sg-pdfparser",
     author="Udit Vashisht",
     author_email="admin@saralgyaan.com",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.6"
-        "Programming Language :: Python :: 3.7"
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
     packages=["pdfparser"],

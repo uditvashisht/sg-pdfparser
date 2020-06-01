@@ -1,13 +1,18 @@
-from custom_error import *
+from pdfparser.custom_error import *
 from colorama import Fore, Back, Style, init
 init(autoreset=True)
 
+
 class UserChoice:
+    """ This class creates a UserChoice for each function
+    """
 
     def __init__(self, number_of_choices):
         self.number_of_choices = number_of_choices
 
     def run_block(self, custom_functions, deletes=False, splits=False, sorts=False):
+        """
+        This one runs the prompt for taking user's input for each choice and then runs the necessary function."""
         while True:
             try:
                 user_choice = int(input(f'Enter your choice (1-{self.number_of_choices}): '))

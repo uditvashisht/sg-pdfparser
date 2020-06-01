@@ -21,3 +21,9 @@ class ChoiceNotInRange(Error):
 class EnterCombination(Error):
     """If user has entered only one value for swaps"""
     pass
+
+
+class InputMultipleFilesError(Error):
+    """ If user passes only one file in merge functions.
+    """
+    pass
