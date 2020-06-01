@@ -26,7 +26,7 @@ setup(
     ],
     packages=["pdfparser"],
     include_package_data=True,
-    install_requires=["PyPDF2", "colorama"],
+    install_requires=["pypdf2", "colorama"],
     entry_points={
         "console_scripts": [
             "pdfparser=pdfparser.__main__:main",
