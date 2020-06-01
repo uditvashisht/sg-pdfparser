@@ -226,7 +226,7 @@ def do_the_deletes(final_list, msg, deleting):
                 list_of_user_choices += list(range(item[0], item[-1] + 1))
             else:
                 list_of_user_choices += range(item[0], item[-1] - 1, -1)
-    list_of_user_choices = list(set(list_of_user_choices))
+    list_of_user_choices = sorted(list(set(list_of_user_choices)))
     delete_pages(list_of_user_choices, file_to_be_deleted, to_directory, deleting)
     print(Fore.GREEN + f'File after {msg.lower()} the pages have been saved in {to_directory}')
 
@@ -356,6 +356,7 @@ def swap_options(reverse=False, swap=False, move=False):
             others = [msg_2, "swap = False"]
         print(f'Enter the pages number(s) separated by - to {msg_1} their positions. For mulitple {msg_1}s, separate them with comma\n')
         user_range_input(msg_2, number_of_pages_sort, func=func, others=others, final_list=None, sorts=True)
+
 
 # Create class UserChoice for each top level function
 split_choices = UserChoice(2)
