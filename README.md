@@ -5,7 +5,7 @@ SaralGyaan PDF Parser is a command-line PDF parsing tool which allows you to:-
 3. Sort Pages of a PDF
 4. Split a PDF
 ## Installation
-You can install SaralGyaan PDF Parser from PyPI:
+You can install SaralGyaan PDF Parser from [PyPI](https://pypi.org/project/sg-pdfparser/):
 ```pip install sg-pdfparser```
 The PDF Parser supports Python 3.6 and above.
 ## How to use?
@@ -64,6 +64,9 @@ What do you want to do?
 ```
 1. The first option will make n splits for n-paged PDF file.
 2. The second one will split the pdf into the ranges or pages as provided. e.g. 1, 3, 9-22, will give three split files first page, third page and pages from nine to twenty two.
+
+## Video Usage Guide
+You can also check out our [Usage Guide](https://youtu.be/BenY3DeEaf4) on Youtube.
 
 ## License
 
